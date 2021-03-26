@@ -1,1 +1,23 @@
-site_name: My test Docs
+---
+
+site_name: "My test Docs"
+use_directory_urls: false
+
+theme:
+  name: "material"
+
+nav:
+  - Overview: "index.md"
+  - API: "API.md"
+
+markdown_extensions:
+  - "admonition"
+  - "codehilite"
+  - "pymdownx.tilde"
+  - "pymdownx.superfences"
+  - toc:
+      permalink: 🔗
+
+plugins:
+  - "search"
+  - "mkdocstrings":
